@@ -275,6 +275,15 @@
       </div>
       <span class="proj-btn-arrow">›</span>
     </button>
+
+    <button class="proj-btn" onclick="showProject('p8', this)">
+      <div class="proj-btn-icon" style="background:#F0FDF4;">🔗</div>
+      <div class="proj-btn-text">
+        <div class="proj-btn-num">08</div>
+        <div class="proj-btn-title">Testing VPC Connectivity</div>
+      </div>
+      <span class="proj-btn-arrow">›</span>
+    </button>
   </aside>
 
   <!-- VIEWER PANEL -->
@@ -479,6 +488,35 @@
         </div>
         <div class="pdf-embed-wrap">
           <iframe src="projects/Launching_VPC_Resources.pdf" title="Launching VPC Resources PDF"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 8 -->
+    <div class="project-view" id="p8">
+      <div class="pv-header">
+        <div class="pv-top">
+          <div class="pv-icon" style="background:#F0FDF4;">🔗</div>
+          <div class="pv-meta">
+            <div class="pv-num">Project 08</div>
+            <div class="pv-title">Testing VPC Connectivity</div>
+          </div>
+        </div>
+        <p class="pv-desc">Launched public and private EC2 instances, connected via EC2 Instance Connect, and tested connectivity using ping and curl. Troubleshot ICMP traffic issues by updating Network ACLs and security group rules to allow communication between servers.</p>
+        <div class="pv-tags">
+          <span class="tag">VPC</span><span class="tag">EC2</span><span class="tag">Ping</span><span class="tag">Curl</span><span class="tag">ICMP</span><span class="tag">Network ACLs</span>
+        </div>
+      </div>
+      <div class="pv-pdf-wrap">
+        <div class="pv-pdf-toolbar">
+          <div class="pv-pdf-filename"><span>📄</span> Testing_vpc_connectivity.pdf</div>
+          <div class="pv-pdf-actions">
+            <a class="pdf-action-btn btn-open" href="projects/Testing_vpc_connectivity.pdf" target="_blank">Open in Tab ↗</a>
+            <a class="pdf-action-btn btn-download" href="projects/Testing_vpc_connectivity.pdf" download>⬇ Download</a>
+          </div>
+        </div>
+        <div class="pdf-embed-wrap">
+          <iframe src="projects/Testing_vpc_connectivity.pdf" title="Testing VPC Connectivity PDF"></iframe>
         </div>
       </div>
     </div>
