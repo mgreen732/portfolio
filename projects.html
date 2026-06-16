@@ -284,6 +284,15 @@
       </div>
       <span class="proj-btn-arrow">›</span>
     </button>
+
+    <button class="proj-btn" onclick="showProject('p9', this)">
+      <div class="proj-btn-icon" style="background:#FFF7ED;">🔀</div>
+      <div class="proj-btn-text">
+        <div class="proj-btn-num">09</div>
+        <div class="proj-btn-title">VPC Peering</div>
+      </div>
+      <span class="proj-btn-arrow">›</span>
+    </button>
   </aside>
 
   <!-- VIEWER PANEL -->
@@ -517,6 +526,35 @@
         </div>
         <div class="pdf-embed-wrap">
           <iframe src="projects/Testing_vpc_connectivity.pdf" title="Testing VPC Connectivity PDF"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 9 -->
+    <div class="project-view" id="p9">
+      <div class="pv-header">
+        <div class="pv-top">
+          <div class="pv-icon" style="background:#FFF7ED;">🔀</div>
+          <div class="pv-meta">
+            <div class="pv-num">Project 09</div>
+            <div class="pv-title">VPC Peering</div>
+          </div>
+        </div>
+        <p class="pv-desc">Built a multi-VPC architecture by creating two VPCs with unique CIDR blocks, establishing a peering connection, updating route tables on both sides, and validating connectivity using ping. Troubleshot EC2 Instance Connect errors by assigning Elastic IP addresses and resolved ping failures by enabling ICMP traffic in security groups.</p>
+        <div class="pv-tags">
+          <span class="tag">VPC Peering</span><span class="tag">Elastic IP</span><span class="tag">ICMP</span><span class="tag">Route Tables</span><span class="tag">EC2</span>
+        </div>
+      </div>
+      <div class="pv-pdf-wrap">
+        <div class="pv-pdf-toolbar">
+          <div class="pv-pdf-filename"><span>📄</span> vpc_peering.pdf</div>
+          <div class="pv-pdf-actions">
+            <a class="pdf-action-btn btn-open" href="projects/vpc_peering.pdf" target="_blank">Open in Tab ↗</a>
+            <a class="pdf-action-btn btn-download" href="projects/vpc_peering.pdf" download>⬇ Download</a>
+          </div>
+        </div>
+        <div class="pdf-embed-wrap">
+          <iframe src="projects/vpc_peering.pdf" title="VPC Peering PDF"></iframe>
         </div>
       </div>
     </div>
