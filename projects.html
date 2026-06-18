@@ -302,6 +302,15 @@
       </div>
       <span class="proj-btn-arrow">›</span>
     </button>
+
+    <button class="proj-btn" onclick="showProject('p11', this)">
+      <div class="proj-btn-icon" style="background:#F5F3FF;">🔑</div>
+      <div class="proj-btn-text">
+        <div class="proj-btn-num">11</div>
+        <div class="proj-btn-title">Access S3 from a VPC</div>
+      </div>
+      <span class="proj-btn-arrow">›</span>
+    </button>
   </aside>
 
   <!-- VIEWER PANEL -->
@@ -593,6 +602,35 @@
         </div>
         <div class="pdf-embed-wrap">
           <iframe src="projects/vpc_monitoring_with_flow_logs.pdf" title="VPC Monitoring with Flow Logs PDF"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 11 -->
+    <div class="project-view" id="p11">
+      <div class="pv-header">
+        <div class="pv-top">
+          <div class="pv-icon" style="background:#F5F3FF;">🔑</div>
+          <div class="pv-meta">
+            <div class="pv-num">Project 11</div>
+            <div class="pv-title">Access S3 from a VPC</div>
+          </div>
+        </div>
+        <p class="pv-desc">Launched a VPC with a public subnet and EC2 instance, configured AWS CLI access keys to authenticate the instance against AWS, and used CLI commands to list, upload, and verify objects in an S3 bucket — demonstrating how compute resources inside a VPC securely interact with storage outside it.</p>
+        <div class="pv-tags">
+          <span class="tag">VPC</span><span class="tag">EC2</span><span class="tag">S3</span><span class="tag">AWS CLI</span><span class="tag">Access Keys</span><span class="tag">IAM Roles</span>
+        </div>
+      </div>
+      <div class="pv-pdf-wrap">
+        <div class="pv-pdf-toolbar">
+          <div class="pv-pdf-filename"><span>📄</span> access_s3_from_a_vpc.pdf</div>
+          <div class="pv-pdf-actions">
+            <a class="pdf-action-btn btn-open" href="projects/access_s3_from_a_vpc.pdf" target="_blank">Open in Tab ↗</a>
+            <a class="pdf-action-btn btn-download" href="projects/access_s3_from_a_vpc.pdf" download>⬇ Download</a>
+          </div>
+        </div>
+        <div class="pdf-embed-wrap">
+          <iframe src="projects/access_s3_from_a_vpc.pdf" title="Access S3 from a VPC PDF"></iframe>
         </div>
       </div>
     </div>
