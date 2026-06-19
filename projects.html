@@ -201,7 +201,7 @@
   <div class="page-header-left">
     <div class="eyebrow">AWS Projects</div>
     <h1 class="page-title">Hands-on cloud labs</h1>
-    <p class="page-sub">Five real AWS projects built from scratch. Click any project to read the full write-up with embedded documentation.</p>
+    <p class="page-sub">Twelve real AWS projects built from scratch. Click any project to read the full write-up with embedded documentation.</p>
   </div>
   <a href="index.html" class="back-btn">← Back to Portfolio</a>
 </div>
@@ -308,6 +308,15 @@
       <div class="proj-btn-text">
         <div class="proj-btn-num">11</div>
         <div class="proj-btn-title">Access S3 from a VPC</div>
+      </div>
+      <span class="proj-btn-arrow">›</span>
+    </button>
+
+    <button class="proj-btn" onclick="showProject('p12', this)">
+      <div class="proj-btn-icon" style="background:#FFF7ED;">🚪</div>
+      <div class="proj-btn-text">
+        <div class="proj-btn-num">12</div>
+        <div class="proj-btn-title">VPC Endpoints</div>
       </div>
       <span class="proj-btn-arrow">›</span>
     </button>
@@ -631,6 +640,35 @@
         </div>
         <div class="pdf-embed-wrap">
           <iframe src="projects/access_s3_from_a_vpc.pdf" title="Access S3 from a VPC PDF"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 12 -->
+    <div class="project-view" id="p12">
+      <div class="pv-header">
+        <div class="pv-top">
+          <div class="pv-icon" style="background:#FFF7ED;">🚪</div>
+          <div class="pv-meta">
+            <div class="pv-num">Project 12</div>
+            <div class="pv-title">VPC Endpoints</div>
+          </div>
+        </div>
+        <p class="pv-desc">Created an S3 Gateway Endpoint to give an EC2 instance private access to an S3 bucket without routing through the internet gateway, then enforced that boundary with a bucket policy scoped to the endpoint's ID. Updated the route table to direct S3 traffic to the endpoint and validated enforcement by toggling the endpoint policy between Allow and Deny.</p>
+        <div class="pv-tags">
+          <span class="tag">VPC Endpoints</span><span class="tag">Gateway Endpoint</span><span class="tag">S3</span><span class="tag">Bucket Policies</span><span class="tag">Endpoint Policies</span><span class="tag">Route Tables</span>
+        </div>
+      </div>
+      <div class="pv-pdf-wrap">
+        <div class="pv-pdf-toolbar">
+          <div class="pv-pdf-filename"><span>📄</span> vpc_endpoints.pdf</div>
+          <div class="pv-pdf-actions">
+            <a class="pdf-action-btn btn-open" href="projects/vpc_endpoints.pdf" target="_blank">Open in Tab ↗</a>
+            <a class="pdf-action-btn btn-download" href="projects/vpc_endpoints.pdf" download>⬇ Download</a>
+          </div>
+        </div>
+        <div class="pdf-embed-wrap">
+          <iframe src="projects/vpc_endpoints.pdf" title="VPC Endpoints PDF"></iframe>
         </div>
       </div>
     </div>
