@@ -201,7 +201,7 @@
   <div class="page-header-left">
     <div class="eyebrow">AWS Projects</div>
     <h1 class="page-title">Hands-on cloud labs</h1>
-    <p class="page-sub">Twelve real AWS projects built from scratch. Click any project to read the full write-up with embedded documentation.</p>
+    <p class="page-sub">Thirteen real AWS projects built from scratch. Click any project to read the full write-up with embedded documentation.</p>
   </div>
   <a href="index.html" class="back-btn">← Back to Portfolio</a>
 </div>
@@ -317,6 +317,15 @@
       <div class="proj-btn-text">
         <div class="proj-btn-num">12</div>
         <div class="proj-btn-title">VPC Endpoints</div>
+      </div>
+      <span class="proj-btn-arrow">›</span>
+    </button>
+
+    <button class="proj-btn" onclick="showProject('p13', this)">
+      <div class="proj-btn-icon" style="background:#F0FDF4;">🌍</div>
+      <div class="proj-btn-text">
+        <div class="proj-btn-num">13</div>
+        <div class="proj-btn-title">Website Delivery with CloudFront</div>
       </div>
       <span class="proj-btn-arrow">›</span>
     </button>
@@ -644,6 +653,7 @@
       </div>
     </div>
 
+
     <!-- PROJECT 12 -->
     <div class="project-view" id="p12">
       <div class="pv-header">
@@ -669,6 +679,35 @@
         </div>
         <div class="pdf-embed-wrap">
           <iframe src="projects/vpc_endpoints.pdf" title="VPC Endpoints PDF"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 13 -->
+    <div class="project-view" id="p13">
+      <div class="pv-header">
+        <div class="pv-top">
+          <div class="pv-icon" style="background:#F0FDF4;">🌍</div>
+          <div class="pv-meta">
+            <div class="pv-num">Project 13</div>
+            <div class="pv-title">Website Delivery with CloudFront</div>
+          </div>
+        </div>
+        <p class="pv-desc">Deployed a static website to S3 and distributed it globally using Amazon CloudFront. Configured a CloudFront distribution with an S3 origin, set up Origin Access Control (OAC) to keep the bucket private while allowing CloudFront access, and compared load times and security between direct S3 hosting and CloudFront delivery.</p>
+        <div class="pv-tags">
+          <span class="tag">CloudFront</span><span class="tag">S3</span><span class="tag">CDN</span><span class="tag">OAC</span><span class="tag">Distributions</span><span class="tag">Static Hosting</span>
+        </div>
+      </div>
+      <div class="pv-pdf-wrap">
+        <div class="pv-pdf-toolbar">
+          <div class="pv-pdf-filename"><span>📄</span> website_delivery_with_cloudfront.pdf</div>
+          <div class="pv-pdf-actions">
+            <a class="pdf-action-btn btn-open" href="projects/website_delivery_with_cloudfront.pdf" target="_blank">Open in Tab ↗</a>
+            <a class="pdf-action-btn btn-download" href="projects/website_delivery_with_cloudfront.pdf" download>⬇ Download</a>
+          </div>
+        </div>
+        <div class="pdf-embed-wrap">
+          <iframe src="projects/website_delivery_with_cloudfront.pdf" title="Website Delivery with CloudFront PDF"></iframe>
         </div>
       </div>
     </div>
