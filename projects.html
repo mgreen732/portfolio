@@ -201,7 +201,7 @@
   <div class="page-header-left">
     <div class="eyebrow">AWS Projects</div>
     <h1 class="page-title">Hands-on cloud labs</h1>
-    <p class="page-sub">Thirteen real AWS projects built from scratch. Click any project to read the full write-up with embedded documentation.</p>
+    <p class="page-sub">Fourteen real AWS projects built from scratch. Click any project to read the full write-up with embedded documentation.</p>
   </div>
   <a href="index.html" class="back-btn">← Back to Portfolio</a>
 </div>
@@ -326,6 +326,15 @@
       <div class="proj-btn-text">
         <div class="proj-btn-num">13</div>
         <div class="proj-btn-title">Website Delivery with CloudFront</div>
+      </div>
+      <span class="proj-btn-arrow">›</span>
+    </button>
+
+    <button class="proj-btn" onclick="showProject('p14', this)">
+      <div class="proj-btn-icon" style="background:#FEF9C3;">⚡</div>
+      <div class="proj-btn-text">
+        <div class="proj-btn-num">14</div>
+        <div class="proj-btn-title">APIs with Lambda + API Gateway</div>
       </div>
       <span class="proj-btn-arrow">›</span>
     </button>
@@ -708,6 +717,36 @@
         </div>
         <div class="pdf-embed-wrap">
           <iframe src="projects/website_delivery_with_cloudfront.pdf" title="Website Delivery with CloudFront PDF"></iframe>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- PROJECT 14 -->
+    <div class="project-view" id="p14">
+      <div class="pv-header">
+        <div class="pv-top">
+          <div class="pv-icon" style="background:#FEF9C3;">⚡</div>
+          <div class="pv-meta">
+            <div class="pv-num">Project 14</div>
+            <div class="pv-title">APIs with Lambda + API Gateway</div>
+          </div>
+        </div>
+        <p class="pv-desc">Built the logic tier of a three-tier architecture by writing a Lambda function to retrieve user data from DynamoDB, then exposed it via a REST API in Amazon API Gateway. Configured a GET method with Lambda proxy integration, deployed to a Prod stage, and wrote and published OpenAPI documentation for the API.</p>
+        <div class="pv-tags">
+          <span class="tag">Lambda</span><span class="tag">API Gateway</span><span class="tag">REST API</span><span class="tag">Serverless</span><span class="tag">DynamoDB</span><span class="tag">OpenAPI</span>
+        </div>
+      </div>
+      <div class="pv-pdf-wrap">
+        <div class="pv-pdf-toolbar">
+          <div class="pv-pdf-filename"><span>📄</span> apis_with_lambda_api_gateway.pdf</div>
+          <div class="pv-pdf-actions">
+            <a class="pdf-action-btn btn-open" href="projects/apis_with_lambda_api_gateway.pdf" target="_blank">Open in Tab ↗</a>
+            <a class="pdf-action-btn btn-download" href="projects/apis_with_lambda_api_gateway.pdf" download>⬇ Download</a>
+          </div>
+        </div>
+        <div class="pdf-embed-wrap">
+          <iframe src="projects/apis_with_lambda_api_gateway.pdf" title="APIs with Lambda + API Gateway PDF"></iframe>
         </div>
       </div>
     </div>
