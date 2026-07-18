@@ -201,7 +201,7 @@
   <div class="page-header-left">
     <div class="eyebrow">AWS Projects</div>
     <h1 class="page-title">Hands-on cloud labs</h1>
-    <p class="page-sub">Fourteen real AWS projects built from scratch. Click any project to read the full write-up with embedded documentation.</p>
+    <p class="page-sub">Fifteen real AWS projects built from scratch. Click any project to read the full write-up with embedded documentation.</p>
   </div>
   <a href="index.html" class="back-btn">← Back to Portfolio</a>
 </div>
@@ -335,6 +335,15 @@
       <div class="proj-btn-text">
         <div class="proj-btn-num">14</div>
         <div class="proj-btn-title">APIs with Lambda + API Gateway</div>
+      </div>
+      <span class="proj-btn-arrow">›</span>
+    </button>
+
+    <button class="proj-btn" onclick="showProject('p15', this)">
+      <div class="proj-btn-icon" style="background:#F0FDF4;">🗄️</div>
+      <div class="proj-btn-text">
+        <div class="proj-btn-num">15</div>
+        <div class="proj-btn-title">Fetch Data with AWS Lambda</div>
       </div>
       <span class="proj-btn-arrow">›</span>
     </button>
@@ -747,6 +756,36 @@
         </div>
         <div class="pdf-embed-wrap">
           <iframe src="projects/apis_with_lambda_api_gateway.pdf" title="APIs with Lambda + API Gateway PDF"></iframe>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- PROJECT 15 -->
+    <div class="project-view" id="p15">
+      <div class="pv-header">
+        <div class="pv-top">
+          <div class="pv-icon" style="background:#F0FDF4;">🗄️</div>
+          <div class="pv-meta">
+            <div class="pv-num">Project 15</div>
+            <div class="pv-title">Fetch Data with AWS Lambda</div>
+          </div>
+        </div>
+        <p class="pv-desc">Set up a DynamoDB table as the data tier of a three-tier architecture, then wrote a Lambda function using the AWS SDK to query it by userId. Debugged an IAM Access Denied error by reading the error message to identify the missing permission, chose AmazonDynamoDBReadOnlyAccess over broader policies, and then hardened security further by writing a custom inline policy scoped to a single table.</p>
+        <div class="pv-tags">
+          <span class="tag">DynamoDB</span><span class="tag">Lambda</span><span class="tag">IAM</span><span class="tag">Inline Policies</span><span class="tag">Execution Roles</span><span class="tag">NoSQL</span>
+        </div>
+      </div>
+      <div class="pv-pdf-wrap">
+        <div class="pv-pdf-toolbar">
+          <div class="pv-pdf-filename"><span>📄</span> fetch_data_with_aws_lambda.pdf</div>
+          <div class="pv-pdf-actions">
+            <a class="pdf-action-btn btn-open" href="projects/fetch_data_with_aws_lambda.pdf" target="_blank">Open in Tab ↗</a>
+            <a class="pdf-action-btn btn-download" href="projects/fetch_data_with_aws_lambda.pdf" download>⬇ Download</a>
+          </div>
+        </div>
+        <div class="pdf-embed-wrap">
+          <iframe src="projects/fetch_data_with_aws_lambda.pdf" title="Fetch Data with AWS Lambda PDF"></iframe>
         </div>
       </div>
     </div>
